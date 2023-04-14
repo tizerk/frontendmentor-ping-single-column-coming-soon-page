@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Libre Franklin", "sans-serif";
+  text-align: center;
+}
+
+.ping-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: block;
+}
+
+.header {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.header span {
+  font-weight: 700;
+}
+
+.subheader {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-input {
+  width: 85%;
+  padding: 1.5rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: var(--gray);
+  border: 1px solid var(--pale-blue);
+}
+
+.input-button {
+  width: 85%;
+  margin-top: 2rem;
+  padding: 1.5rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: white;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  box-shadow: 0px 0px 10px rgba(5, 0, 39, 0.25);
+}
+
+.dashboard-illustration {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+.socials-section {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.socials-section a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.copyright-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 70%, 45%);
+  text-decoration: none;
+}
+
+.input-button:hover {
+  background-color: hsl(223, 89%, 72%);
+  border: 1px solid hsl(223, 89%, 72%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.invalid-input {
+  border: 1.5px solid var(--light-red);
+}
+.invalid-input:focus {
+  outline: 1px solid var(--light-red);
+}
+
+.validation-message {
+  color: var(--light-red);
+  font-size: 1.3rem;
+  display: none;
+  margin-top: 1rem;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    color: var(--gray);
+    font-size: 5rem;
+  }
+  .header span {
+    color: var(--dark-blue);
+  }
+  .subheader {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .user-input {
+    width: 50%;
+    max-width: 500px;
+    display: inline;
+  }
+  .input-button {
+    width: 18%;
+    max-width: 150px;
+    margin-top: 2rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    box-shadow: 0px 0px 10px rgba(5, 0, 39, 0.25);
+  }
+  .dashboard-illustration {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
